@@ -1,0 +1,22 @@
+# This is a generated file. Not intended for manual editing.
+version: "3.9"
+services:
+  app:
+    build:
+      context: "C:\\Users\\User\\RiderProjects\\EfCoreSplitQueryDemo"
+      dockerfile: "Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net8.0/EfCoreSplitQueryDemo.dll"
+    environment:
+      DOTNET_ENVIRONMENT: "Development"
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "efcoresplitquerydemo:dev"
+    ports: []
+    volumes:
+    - "C:\\Users\\User\\RiderProjects\\EfCoreSplitQueryDemo:/app:rw"
+    - "C:\\Users\\User\\RiderProjects\\EfCoreSplitQueryDemo:/src:rw"
+    - "C:\\Users\\User\\.nuget\\packages:/home/app/.nuget/packages"
+    working_dir: "/app"
